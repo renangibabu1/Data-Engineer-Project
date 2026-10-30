@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploy Layout</title>
+    <style>
+      :root {
+        --bg: #f3f3f3;
+        --panel: #efefef;
+        --ink: #111111;
+        --border: rgba(0, 0, 0, 0.9);
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      .frame {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: var(--panel);
+        border: 1px solid var(--border);
+      }
+
+      .topbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 0 18px 0 0;
+      }
+
+      .deploy {
+        font-size: 19px;
+        line-height: 1;
+        letter-spacing: 0.01em;
+        font-weight: 400;
+        color: #111;
+      }
+
+      .menu {
+        width: 18px;
+        height: 18px;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+
+      .menu::before,
+      .menu::after,
+      .menu span {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #111;
+        position: absolute;
+      }
+
+      .menu::before { top: 2px; left: 50%; transform: translateX(-50%); }
+      .menu span { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+      .menu::after { bottom: 2px; left: 50%; transform: translateX(-50%); }
+
+      .bottom-dots {
+        position: absolute;
+        left: 18px;
+        bottom: 16px;
+        width: 18px;
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="topbar">
+        <div class="deploy">Deploy</div>
+        <div class="menu" aria-label="More options">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bottom-dots" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </body>
+</html>
