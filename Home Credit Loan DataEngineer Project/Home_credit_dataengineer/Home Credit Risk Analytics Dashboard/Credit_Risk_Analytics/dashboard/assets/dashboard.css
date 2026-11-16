@@ -1,0 +1,270 @@
+:root {
+  --hc-navy: #142b4a;
+  --hc-teal: #0d9488;
+  --hc-muted: #61738a;
+  --hc-border: #dce5ef;
+  --hc-shadow: 0 8px 24px rgba(20, 43, 74, 0.07);
+}
+
+.st-key-sidebar-brand {
+  margin-bottom: 0.6rem;
+  padding: 0.25rem 0.35rem 0.8rem;
+  border-bottom: 1px solid #2d4562;
+}
+
+.st-key-sidebar-brand .brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.st-key-sidebar-brand .brand-mark {
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: linear-gradient(145deg, #26c6b7, #0d9488);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  box-shadow: 0 5px 14px rgba(13, 148, 136, 0.28);
+}
+
+.st-key-sidebar-brand strong,
+.st-key-sidebar-brand span {
+  display: block;
+}
+
+.st-key-sidebar-brand strong {
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.st-key-sidebar-brand span {
+  color: #c6d5e5;
+  font-size: 0.82rem;
+}
+
+.st-key-sidebar-navigation a[href=""] > span:first-child > span {
+  color: #60a5fa !important;
+}
+
+.st-key-sidebar-navigation a[href="customer_demographics"] > span:first-child > span {
+  color: #34d399 !important;
+}
+
+.st-key-sidebar-navigation a[href="loan_application"] > span:first-child > span {
+  color: #38bdf8 !important;
+}
+
+.st-key-sidebar-navigation a[href="risk_analysis"] > span:first-child > span {
+  color: #f87171 !important;
+}
+
+.st-key-sidebar-navigation a[href="income_employment"] > span:first-child > span {
+  color: #4ade80 !important;
+}
+
+.st-key-sidebar-navigation a[href="credit_bureau"] > span:first-child > span {
+  color: #a78bfa !important;
+}
+
+.st-key-sidebar-navigation a[href="previous_applications"] > span:first-child > span {
+  color: #fbbf24 !important;
+}
+
+.st-key-sidebar-navigation a[href="repayment_installments"] > span:first-child > span {
+  color: #22d3ee !important;
+}
+
+.st-key-sidebar-navigation a[href="ml_prediction"] > span:first-child > span {
+  color: #e879f9 !important;
+}
+
+.st-key-sidebar-navigation a[href="reports_download"] > span:first-child > span {
+  color: #fb923c !important;
+}
+
+.st-key-dataset-meta {
+  margin-top: 1rem;
+  border-color: #2d4562;
+  border-radius: 0.8rem;
+  background: #193653;
+}
+
+.st-key-dashboard-banner {
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 0 0.55rem;
+  border-bottom: 1px solid var(--hc-border);
+}
+
+.st-key-dashboard-banner .banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.st-key-dashboard-banner .banner-content > div:first-child {
+  min-width: 0;
+  flex: 1 1 520px;
+}
+
+.st-key-dashboard-banner h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin: 0 0 0.18rem;
+  color: var(--hc-navy);
+  font-size: clamp(1.15rem, 2vw, 1.8rem);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.st-key-dashboard-banner .dashboard-title-separator {
+  color: #91a0b2;
+  font-weight: 400;
+}
+
+.st-key-dashboard-banner p {
+  margin: 0;
+  color: var(--hc-muted);
+  font-size: 0.82rem;
+}
+
+.st-key-dashboard-banner .dashboard-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.12rem;
+  margin-left: auto;
+  flex: 0 0 auto;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--hc-border);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.st-key-dashboard-banner .dashboard-badge {
+  color: var(--hc-navy);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.st-key-dashboard-banner .dashboard-count {
+  color: var(--hc-muted);
+  font-size: 0.68rem;
+}
+
+.st-key-dashboard-filter-toolbar {
+  margin-bottom: 0.55rem;
+  padding: 0.55rem 0.75rem;
+  border-color: #d7e3ed;
+  border-radius: 0.85rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(20, 43, 74, 0.045);
+}
+
+.st-key-dashboard-filter-toolbar h4 {
+  margin: 0 0 0.35rem;
+  color: var(--hc-navy);
+  font-size: 0.82rem;
+}
+
+.st-key-kpi-card-0,
+.st-key-kpi-card-1,
+.st-key-kpi-card-2,
+.st-key-kpi-card-3,
+.st-key-kpi-card-4,
+.st-key-kpi-card-5,
+.st-key-kpi-card-6,
+.st-key-kpi-card-7,
+.st-key-kpi-card-8 {
+  border-top: 3px solid var(--hc-teal);
+  border-color: var(--hc-border);
+  border-top-width: 3px;
+  border-radius: 0.95rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f7fbfe 100%);
+  box-shadow: 0 5px 16px rgba(20, 43, 74, 0.055);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.st-key-kpi-card-0 {
+  border-top-color: #2787c7;
+  background: linear-gradient(145deg, #f0f8ff, #ffffff 72%);
+}
+
+.st-key-kpi-card-1 {
+  border-top-color: #0d9488;
+  background: linear-gradient(145deg, #effbf8, #ffffff 72%);
+}
+
+.st-key-kpi-card-2 {
+  border-top-color: #e9982f;
+  background: linear-gradient(145deg, #fff8ed, #ffffff 72%);
+}
+
+.st-key-kpi-card-3 {
+  border-top-color: #8256c7;
+  background: linear-gradient(145deg, #f7f3ff, #ffffff 72%);
+}
+
+.st-key-kpi-card-4 {
+  border-top-color: #d65b75;
+  background: linear-gradient(145deg, #fff3f5, #ffffff 72%);
+}
+
+.st-key-kpi-card-5 {
+  border-top-color: #3974bd;
+  background: linear-gradient(145deg, #f1f6ff, #ffffff 72%);
+}
+
+.st-key-kpi-card-6 {
+  border-top-color: #5a9a62;
+  background: linear-gradient(145deg, #f2faf2, #ffffff 72%);
+}
+
+.st-key-kpi-card-7 {
+  border-top-color: #dc7a45;
+  background: linear-gradient(145deg, #fff5ef, #ffffff 72%);
+}
+
+.st-key-kpi-card-8 {
+  border-top-color: #6971c8;
+  background: linear-gradient(145deg, #f4f4ff, #ffffff 72%);
+}
+
+.st-key-kpi-card-0:hover,
+.st-key-kpi-card-1:hover,
+.st-key-kpi-card-2:hover,
+.st-key-kpi-card-3:hover,
+.st-key-kpi-card-4:hover,
+.st-key-kpi-card-5:hover,
+.st-key-kpi-card-6:hover,
+.st-key-kpi-card-7:hover,
+.st-key-kpi-card-8:hover,
+.st-key-kpi-card-0:focus-within,
+.st-key-kpi-card-1:focus-within,
+.st-key-kpi-card-2:focus-within,
+.st-key-kpi-card-3:focus-within,
+.st-key-kpi-card-4:focus-within,
+.st-key-kpi-card-5:focus-within,
+.st-key-kpi-card-6:focus-within,
+.st-key-kpi-card-7:focus-within,
+.st-key-kpi-card-8:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 11px 24px rgba(20, 43, 74, 0.11);
+}
+
+@media (max-width: 700px) {
+  .st-key-dashboard-banner .banner-content {
+    align-items: flex-start;
+  }
+
+  .st-key-dashboard-banner .dashboard-meta {
+    align-items: flex-start;
+  }
+}
